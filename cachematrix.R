@@ -73,3 +73,23 @@ cacheSolve <- function(x, ...) {
 # }
 
 
+test <-function(){
+	B <- matrix( 
+	   c(2, 4, 3, 1, 5, 7), 
+	  nrow=2, 
+	  ncol=2) ;
+	print(B)
+
+	Bcachable <- makeCacheMatrix(B)
+	# print(Bcachable)
+
+	Binverse <- cacheSolve(Bcachable)
+	print(Binverse)	
+
+	Binverse
+}
+
+if(debugging){
+	x<-test()
+}
+
