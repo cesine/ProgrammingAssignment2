@@ -1,4 +1,4 @@
-debugging = TRUE
+debugging = FALSE
 
 
 # The first function, makeCacheMatrix creates a special "matrix", which is really a list containing a function to
